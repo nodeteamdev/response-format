@@ -6,7 +6,7 @@
 
 1- GET - Get single item - HTTP Response Code: **200**
 ```javascript
-    HTTP/1.1 200
+    HTTP/2 200
     Content-Type: application/json
 
     {
@@ -17,7 +17,7 @@
 ```
 2- GET - Get item list - HTTP Response Code: **200**
 ```javascript
-    HTTP/1.1 200
+    HTTP/2 200
     Content-Type: application/json
 
     [
@@ -38,7 +38,7 @@
 
 3- POST - Create a new item - HTTP Response Code: **201**
 ```javascript
-    HTTP/1.1  201
+    HTTP/2  201
     Content-Type: application/json
 
     {
@@ -50,7 +50,7 @@
 > If updated entity is to be sent after the update
 
 ```javascript
-    HTTP/1.1  200
+    HTTP/2  200
     Content-Type: application/json
 
     {
@@ -64,12 +64,12 @@
 > If updated entity is not to be sent after the update
 
 ```javascript
-    HTTP/1.1  204
+    HTTP/2  204
 ```
 
 5- DELETE - Delete an item - HTTP Response Code: **204**
 ```javascript
-    HTTP/1.1  204
+    HTTP/2  204
 ```
 
 
@@ -78,7 +78,7 @@
 1- GET - HTTP Response Code: **404**
 
 ```javascript
-    HTTP/1.1  404
+    HTTP/2  404
     Content-Type: application/json
 
     {
@@ -87,7 +87,7 @@
 ```
 2- DELETE - HTTP Response Code: **404**
 ```javascript
-    HTTP/1.1  404
+    HTTP/2  404
     Content-Type: application/json
 
     {
@@ -96,7 +96,7 @@
 ```
 3- POST -  HTTP Response Code: **400**
 ```javascript
-    HTTP/1.1  400
+    HTTP/2  400
     Content-Type: application/json
 
     {
@@ -115,7 +115,7 @@
 ```
 4- PATCH -  HTTP Response Code: **400/404**
 ```javascript
-    HTTP/1.1  400
+    HTTP/2  400
     Content-Type: application/json
 
     {
@@ -129,7 +129,7 @@
     }
 
 
-    HTTP/1.1  404
+    HTTP/2  404
     Content-Type: application/json
 
     {
@@ -138,7 +138,7 @@
 ```
 5- VERB Unauthorized - HTTP Response Code: **401**
 ```javascript
-    HTTP/1.1  401
+    HTTP/2  401
     Content-Type: application/json
 
     {
@@ -147,7 +147,7 @@
 ```
 6- VERB Forbidden - HTTP Response Code: **403**
 ```javascript
-    HTTP/1.1  403
+    HTTP/2  403
     Content-Type: application/json
 
     {
@@ -156,7 +156,7 @@
 ```
 7- VERB Conflict - HTTP Response Code: **409**
 ```javascript
-    HTTP/1.1  409
+    HTTP/2  409
     Content-Type: application/json
 
     {
@@ -165,7 +165,7 @@
 ```
 8- VERB Too Many Requests - HTTP Response Code: **429**
 ```javascript
-    HTTP/1.1  429
+    HTTP/2  429
     Content-Type: application/json
 
     {
@@ -174,7 +174,7 @@
 ```
 9- VERB Internal Server Error - HTTP Response Code: **500**
 ```javascript
-    HTTP/1.1  500
+    HTTP/2  500
     Content-Type: application/json
 
     {
@@ -183,7 +183,7 @@
 ```
 10- VERB Service Unavailable - HTTP Response Code: **503**
 ```javascript
-    HTTP/1.1  503
+    HTTP/2  503
     Content-Type: application/json
 
     {
