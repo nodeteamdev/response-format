@@ -1,0 +1,31 @@
+# Factor
+.factor
+dist
+
+# Env / Secrets
+*secret*
+.env
+
+# Logs
+report*
+logs
+*.log
+
+# Dependency directories
+node_modules/
+
+# Service worker
+sw.*
+.history
+.vscode
+vscode
+.git
+.DS_STORE
+.netbeans
+nbproject
+.idea
+.sonarlint
+.vscode
+.node_history
+.history
+.vscode
